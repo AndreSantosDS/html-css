@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+    <style>
+        *{
+            list-style: none;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no Github</a></p><!--<a> é utilizado para criar hiperlinks, ou seja, para definir links entre diferentes páginas da web ou recursos online.
+
+    href: Este é um atributo obrigatório que especifica o destino do link. Pode ser uma URL (Uniform Resource Locator), um endereço de e-mail, um link para um arquivo, ou até mesmo um link para uma âncora em uma página (usando #). Por exemplo, para criar um link para o Google, você usaria href="https://www.google.com".
+
+    target="_blank": Este atributo define onde abrir o link. Quando target é definido como "_blank", o link será aberto em uma nova janela ou guia do navegador.
+
+    target="_self": vai abrir o link na janela ou frame atual(padrão).
+
+    target="_top": vai desfazer todos os frames e abrir o destino no navegador completo.
+
+    target="_parent": Similar ao uso do _top em uma referência à janela mãe nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir.
+
+rel="external": Este atributo especifica a relação entre o documento atual e o recurso vinculado. No exemplo, "external" sugere que o link aponta para um recurso externo ao site atual.
+
+rel="next": Indica que o link é para a próxima parte do doocumento atual.
+
+rel="prev": Indica que o link é para a parte anterior do documento atual.
+
+rel="author": Indica que é um link para o site do autor do artigo atual.
+
+rel="nofollow": Este atributo é frequentemente usado em links para indicar aos motores de busca que não devem seguir o link. Isso é útil quando você não deseja que a página vinculada influencie a classificação do mecanismo de pesquisa para a página atual. 
+
+   Texto do Link: Este é o texto que será exibido como o link na página. Por exemplo, se você quiser que o link exiba "Ir para o Google", você escreveria <a href="https://www.google.com">Ir para o Google</a>.-->
+
+   <p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">meu canal gratuito no YouTube</a></p>
+
+   <h1>Usando links internos</h1>
+   <p>Esta é a primeira página do site.Se você quiser, pode acessar também a minha <a href="pag002.html" target="_self" rel="next">segunda página</a></p>
+   
+   <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+
+   <h1>Links para download</h1>
+   <ul>
+     <li><a href="livro/ligacoes.pdf" download="ligacoes.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+     <li><a href="livro/ligacoes.zip" download="ligacoes.zip" type="application/zip">Baixar o livro compactado em ZIP</a></li>
+     <!--Aqui vão alguns "media types" bem usados no nosso dia-a-dia:
+      application/zip
+      text/html
+      text/css
+      text/javascript
+      video/mp4
+      video/H264
+      video/JPEG
+      audio/aac
+      audio/mpeg
+      font/ttf
+      image/jpeg
+      image/png
+    -->
+   </ul>
+</body>
+</html>

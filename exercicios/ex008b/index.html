@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>getElementeById("teste")</code> é escrito em liguagem JavaScript.</p>
+    <pre>
+        <code>
+            num = int(input("Digite um número"))
+            if num % 2 == 0;
+              print(f'O número {num}é PAR')
+            else:
+               print(f'O número {num} é ÍMPAR')
+            print('Fim do programa')
+        </code><!--A tag <code> é usada para definir um bloco de código em inline, indicando que o texto dentro dela deve ser interpretado como código. Ela é frequentemente utilizada para exibir trechos de código-fonte em uma página da web, destacando visualmente o conteúdo como código para facilitar a leitura.-->
+    </pre><!--A tag <pre>é utilizada para definir texto pré-formatado. Ela preserva tanto os espaçamentos quanto as quebras de linha no texto, exibindo-o exatamente como está no código-fonte. Isso é útil quando você deseja exibir blocos de texto nos quais a formatação, como espaçamentos e quebras de linha, é significativa e deve ser mantida na renderização.-->
+
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p><!--A tag <q> é usada para indicar uma citação curta em um bloco de texto. O conteúdo dentro da tag <q> é normalmente uma citação que é incorporada diretamente no parágrafo ou texto circundante. Quando o navegador renderiza a página, a tag <q> geralmente adiciona aspas automáticas ao redor do conteúdo citado.-->
+    
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos: 
+    <Blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&pg=PA17&dq=HTML&h1=pt-BR&sa=X&ved=0ahUKEwjH5-PevNboAhVNIbkGHcoxCOgQ6AEIOjAC#v=onepage&q=HTML&f=false"><!--A tag <blockquote> é usada para definir um bloco de texto que é uma citação de outra fonte. Geralmente, é usada para destacar trechos longos de texto que foram retirados de outras fontes, como livros, artigos, entrevistas, etc. A tag <blockquote> cria uma seção de texto recuada, indicando visualmente que é uma citação.
+A tag pode ser usada em conjunto com o atributo "cite", que é opcional. O atributo cite é utilizado para fornecer a URL ou o URI da fonte original da citação. Isso ajuda a fornecer informações adicionais sobre a origem da citação.-->
+      A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTml neste capítulo descrevem os blocos de texto.
+    </Blockquote>
+</p>
+
+   <h2>Abreviações</h2>
+   <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets"> CSS</abbr>. Estou adorando!</p><!--A tag <abbr> é utilizada para definir uma abreviação ou uma sigla no texto. Essa tag é especialmente útil quando você deseja fornecer uma explicação ou descrição do significado completo da abreviação. A tag <abbr> possui um atributo chamado "title", no qual você pode inserir a descrição completa da abreviação.-->
+
+   <h2>Texto invertido</h2>
+   <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p><!--o texto dentro da tag <bdo> será exibido da direita para a esquerda devido ao atributo dir="rtl".-->
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo></p><!--A tag <bdo> está sendo utilizada para mudar a direção do ponto (.) para a direção padrão da esquerda para a direita (LTR - Left-to-Right), mesmo que o contexto global da página ou do parágrafo seja de direita para a esquerda.-->
+</body>
+</html>

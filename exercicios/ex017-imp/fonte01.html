@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        body{
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif; 
+/*A propriedade "font-family" no CSS3 é usada para especificar a fonte ou a lista de fontes a serem utilizadas para exibir o texto em um elemento HTML. Essa propriedade permite que você defina uma pilha de fontes, onde o navegador tentará usar a primeira fonte listada. Se essa fonte não estiver disponível, ele tentará a próxima na lista e assim por diante, até encontrar uma fonte que esteja presente no sistema do usuário.*/
+
+            font-size: 1em;
+/*Medidas Absolutas
+cm, mm, in, px, pt, pc
+
+Medidas Relativas
+em, ex, rem, vw, vh, %
+
+  Usar o px e em, no font-size: ; -> recomendação da W3C.
+
+  16px geralmente é o tamanho normal da fonte.
+  16px geralmente é igual a 1em.
+*/
+
+/*A propriedade "font-size" no CSS3 é utilizada para definir o tamanho do texto em um elemento HTML. Ela especifica a dimensão da fonte que será aplicada ao texto dentro do elemento. A unidade de medida mais comum usada com font-size é o "px" (pixels), mas você também pode usar outras unidades como em (em), rem (root em), % (porcentagem), vw (viewport width), vh (viewport height), entre outras.*/
+
+     font-weight: bold;
+/*A propriedade "font-weight" em CSS3 é utilizada para definir a espessura do peso da fonte de um elemento de texto. Ela especifica o peso relativo ou a grossura da fonte, indicando se deve ser mais leve (mais fina) ou mais pesada (mais grossa). O valor dessa propriedade pode ser definido usando palavras-chave ou valores numéricos: lighter, normal, bold, bolder, 100, 200, 300, 400, 500, 600, 700, 800, 900.
+
+font-weight -> Não existe em todas as fontes.
+*/
+
+/*
+weight -> Peso
+width -> Largura
+height -> Altura
+*/
+
+      font-style: italic;
+/*
+A propriedade "font-style" em CSS3 é utilizada para especificar o estilo da fonte de um elemento de texto. Ela determina se o texto deve ser exibido em itálico, oblíquo ou normal.
+
+font-style -> Não existe em todas as fontes.
+*/
+   
+        }
+
+        h1{
+/*          font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'Work Sans',sans-serif;
+
+Shorthand font
+  Para fazer um Shorthand font, tem que está nesta sequência-> font-style -> font-weight -> font-size -> font-family.
+*/
+font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2{
+            font: lighter 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut obcaecati officiis numquam accusamus beatae consectetur officia, nobis repudiandae vitae dolor porro? In itaque voluptatem consequuntur impedit dolores repudiandae odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quam quae dolore molestiae mollitia cum obcaecati. Voluptatem tenetur molestiae, doloremque ab facere explicabo voluptates ducimus, voluptatum soluta minima mollitia odit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iste quo, quod consequuntur veniam odio soluta minus atque labore neque! Quas ea fugit architecto vero! Totam ex laboriosam maiores omnis?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, harum! Alias laboriosam odio ducimus totam, sunt, quod quidem architecto ipsa doloribus, eligendi placeat nisi nostrum tempora. A repellendus optio accusamus.</p>
+    <a href="fonte02.html" target="_self" rel="next">Fonte 02</a>
+</body>
+</html>

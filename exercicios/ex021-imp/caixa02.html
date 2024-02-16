@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            box-shadow: inset 1px 1px 14px black;
+        }
+        nav{
+            background-color: rgb(102,102,102);
+            padding-top: 20px;
+            padding-left: 10px;
+            height: 32px;
+            box-shadow: 1px 1px 1px black;
+            /*box-shadow: horizontal  vertical  embaraçamento  cor*/
+            /*box-shadow: inset horizontal  vertical  embaraçamento  cor*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            transition: 0.5s;
+        }
+        nav > a:hover{
+            border-radius: 3px;
+            padding: 5px;
+            background-color: black;
+            text-decoration: underline;
+        }
+        nav > a:active{
+            color: blue;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 1px 1px 5px black;
+            border-radius: 10px 0px 10px 0px;
+            /*border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 40px;
+
+            border-radius: 10px 40px;
+            border-radius: 10px;
+            border-radius: 20%;
+            */
+        }
+        article{
+            padding: 10px;
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: rgb(165,165,165);
+            padding: 10px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 9px;
+            margin: 9px;
+        }
+        footer > p{
+            margin: 0%;
+            padding: 0%;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="caixa01.html" rel="prev">Caixa01</a>
+            <a href="caixa03.html" target="_self" rel="next">Caixa03</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+         <p>Esportes, Política e Tecnologia.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eius esse numquam corporis nesciunt amet consectetur. Aspernatur ut blanditiis, eum quisquam accusamus, esse voluptate corporis distinctio alias architecto, sint laboriosam?</p>
+                <aside>
+                    <p>Artigo escrito por José da SIlva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+    <p>Desenvolvido pelo CursoemVideo.</p>
+    </footer>
+    <div id="bola"></div>
+
+<!--HEADER: Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos <h1>...<h6> e subtítulos. Podem também conter menus de navegação.-->
+
+<!--NAV: Define a área que possui os links de navegação pela estrutura de páginas que vão compor o website. Um <nav> pode estar dentro de um <header>.-->
+
+<!--MAIN: É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções, artigos e conteúdos periféricos.-->
+
+<!--SECTION: Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação oficial da W3C, "uma seção é um agrupamento temático de conteúdo, tipicamente com um cabeçalho".-->
+
+<!--ARTICLE: Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um <article> para delimitar um post de blog ou fórum, uma notícia, etc.-->
+
+<!--ASIDE: Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo <aside> está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto apresentado anteriormente, falando sobre "MÚLTIPLOS NÍVEIS".-->
+
+<!--FOOTER: Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico (o que caracteriza um <aside>), mas possui informações sobre autoria do conteúdo, links adicionais, mapa do site, documentos relacionados.-->
+</body>
+</html>

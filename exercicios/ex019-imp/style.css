@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*Em HTML é "id" em CSS "#"
+Em HTML é "class" em CSS "."
+*/
+
+/*Ao criar nosso conteúdo em HTML, podemos identificar um determinado elemento único com um "id -> #", ou agrupar elementos múltiplos que tenham caracteríticas semelhantes com um "class -> .*/
+
+/*Um "id -> #" vai identificar um elemento único dentro da página atual.Essa identificação vai nos permitir criar um estilo especial para elemento isolado. Já um "class -> ." vai identificar uma classe à qual um ou mais elementos pertençam, compartilhando caracteríticas em comum a todos os que façam parte desse grupo.*/
+
+/*Certifique-se de que o valor do atributo id é único dentro do documento HTML. Não deve haver dois elementos com o mesmo id.
+Exemplo correto:
+<div id="conteudo"></div>
+<p id="paragrafo1"></p>
+
+Exemplo incorreto (mesmo id em dois elementos):
+<div id="conteudo"></div>
+<p id="conteudo"></p>
+*/
+
+/*Evite o uso de espaços no valor do atributo id. Se precisar representar espaços, você pode usar hífens ou camel case.
+Exemplo correto:
+<div id="minha-secao"></div>
+<div id="minhaSecao"></div>
+
+Exemplo incorreto: 
+<div id="minha secao"></div>
+*/
+
+/*Você pode associar um elemento a mais de uma classe, separando os nomes das classes por espaços. 
+Exemplo correto: 
+<h2 class="avancado destaque">CSS avançado</h2>
+Exemplo incorreto: 
+<h2 class="avancado, destaque">CSS avançado</h2>
+
+Evite usar nomes genéricos como classe1, estilo2, etc. Isso pode tornar seu código difícil de entender e manter.
+Exemplo correto:
+<div class="borda-arredondada"></div>
+Exemplo incorreto (nome genérico):
+<div class="classe1"></div>
+
+Também pode usar um id e uma class em um mesmo elemento.
+Exemplo: 
+<h1 id="principal" class="destaque">Criando sites com HTMl e CSS</h1>
+</h2>
+*/
+body{
+    background-color: #46a9e7;
+}
+h1{
+    color: #F2CF1D;    
+    text-shadow: 3px 3px 5px white;
+}
+h1#principal{
+    text-shadow: none;
+    text-align: center;
+    color: white;
+    box-shadow: 2px 3px 10px white;
+}
+h2{
+    text-shadow:3px 3px 5px black;
+    color: #F2F2F2;
+}
+.basico{
+  color: rgb(223, 70, 9);
+  font-weight: bold;
+}
+.intermediario{
+color: chartreuse;
+}
+.avancado{
+color: rgb(15, 75, 15);
+}
+.destaque{
+    background-color: rgba(197,197,96,0.438);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+         /*DaFont - Baixar fontes -> é um site que você pode usar para baixar tipos de fontes.*/
+        @font-face {
+            font-family: 'LOVE FOREVER';
+            src: url('./fontes/LOVE\ FOREVER.otf') format('opentype'), url('./fontes/LOVE\ FOREVER.ttf') format('truetype');
+            /*@font-face: É uma regra do CSS que permite aos designers de páginas web especificar fontes personalizadas para serem usadas em suas páginas.
+
+font-family: 'LOVE FOREVER';: Define o nome que será usado para se referir a essa fonte personalizada no restante do código CSS. Neste caso, o nome escolhido é 'LOVE FOREVER'.
+
+src: Especifica a localização dos arquivos de fonte. Neste caso, são fornecidos dois arquivos de fonte em formatos diferentes: um no formato OpenType (otf) e outro no formato TrueType (ttf). A propriedade src utiliza a função url() para especificar os caminhos dos arquivos de fonte.
+
+url('./fontes/LOVE FOREVER.otf') format('opentype'): Indica a localização do arquivo de fonte no formato OpenType e seu formato.
+
+url('./fontes/LOVE FOREVER.ttf') format('truetype'): Indica a localização do arquivo de fonte no formato TrueType e seu formato.*/
+
+            /*
+            Tipos de format():
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded - opentype
+            -truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        h1{
+            font-family: 'LOVE FOREVER';
+            text-align: center;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, maxime non. Molestias est rem modi alias, provident voluptates impedit libero quia, consequatur repellendus corporis commodi nam nulla rerum quam facere!</p>
+    <p><a href="fonte01.html" rel="prev">Fonte 01</a></p>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }/*:visited -> pseudo-classe*/
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }/*:hover -> pseudo-classe*/
+        a:active{
+            color: lime;
+        }/*:active -> pseudo-classe*/
+        .especial{
+            background-color: aqua;
+        }
+        .especial::before{
+            content: "↠ ";
+            color: rgb(255, 5, 5);
+        }/*::before -> pseudo-elemento*/
+        .especial::after{
+        content: " ↞";
+        color: red;
+        }/*::after -> pseudo-elemento*/
+        .github:hover{
+            background-image: linear-gradient(50deg,#00E3CC,#009688);
+            border-radius: 10px;
+        }
+        .github:hover::before{
+        content: "↪ ";
+        color: black;
+        }
+        .github:hover::after{
+        content: " ↩";
+        color: black;
+        }
+        /*SELETORES PERSONALIZADOS
+        # -> id
+        . -> class
+        : -> pseudo-class
+        :: -> pseudo-element
+        > -> child combinator(combinador de filho)
+        */
+
+        /*Em CSS, pseudo-elementos são seletores que permitem estilizar partes específicas de um elemento. Eles são representados por dois pontos (::) e são usados para adicionar estilos a partes específicas de um elemento que não estão presentes no DOM (Modelo de Objeto de Documento). Os pseudo-elementos geralmente são usados para criar efeitos visuais ou estilizar partes específicas de um elemento que não podem ser selecionadas usando apenas seletores de classe ou ID.
+
+Existem alguns pseudo-elementos comuns em CSS, sendo os mais utilizados ::before e ::after. Aqui estão alguns exemplos:
+
+::before e ::after:
+
+.exemplo::before {
+  content: "Antes ";
+  font-weight: bold;
+}
+
+.exemplo::after {
+  content: " Depois";
+  font-weight: bold;
+}
+Este exemplo adiciona texto antes e depois do conteúdo real do elemento com a classe "exemplo".
+
+::first-line e ::first-letter:
+
+p::first-line {
+  color: blue;
+}
+
+p::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+}
+Este exemplo estiliza a primeira linha e a primeira letra de cada parágrafo.
+
+::selection:
+
+p::selection {
+  background-color: yellow;
+  color: black;
+}
+Este exemplo estiliza o texto selecionado dentro de um parágrafo.
+
+Estes são apenas alguns exemplos de pseudo-elementos em CSS.
+*/
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external" class="github">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" class="especial">Canal do YouTube</a></li>
+        <li"><a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do CursoemVideo</a></li>
+    </ul>
+    <a href="pseudoclasse.html" rel="prev">Página de pseudo-classes</a>
+</body>
+</html>

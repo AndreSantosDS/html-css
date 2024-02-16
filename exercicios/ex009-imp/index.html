@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html.ico" type="image/x-icon">
+    <title>Listas</title>
+    <style>
+        .nao-ordenada2{
+            list-style-type: '\00A0\2714\00A0';
+            /*Também pode mudar o símbolo da lista usando o código do emoji, que se encontra no site emojipedia, mas isso não é compatível com todos os navegadores.*/
+            /*\00A0 -> Serve para dar um espaço.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="i"><!--A tag <ol> serve para listas ordenadas, o parâmetro type tem algumas opções,por exemplo: type="1"(valor padrão, criar listas numeradas),type="A"(Criar listas alfabéticas em maiúsculas),type="a"(Criar listas alfabéticas em minúsculas),type="I"(Criar listas com algarismos romanos maiúsculas),type="i"(Criar listas com algarismos romanos minúsculas),-->
+
+        <li>Acordar</li><!--A tag <li> é usada para criar elementos de lista (list items). Ela é comumente usada dentro de listas ordenadas <ol> ou listas não ordenadas <ul>. A tag <li> é usada para definir cada item individual na lista.-->
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <hr>
+    <h2>Listas não ordenadas</h2>
+
+    <ul type="square" class="nao-ordenada1"><!--A tag <ul> serve para listas não ordenadas, o parâmetro type tem algumas opções,por exemplo: type="disc"(Uma bola preta totalmente pintada),type="Circle"(Uma bola com uma borda preta e sem preenchimento),type="square"(Um pequeno quadrado preto totalmente pintado),-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Cebola</li>
+    </ul>
+    <ul class="nao-ordenada2">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Cebola</li>
+    </ul>
+    <hr>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+          <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+          </ol>
+        <li>Novas</li>
+        <ol type="a">
+            <li>Php</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <hr>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+          <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+          </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"><!--start="5": O atributo start especifica o valor inicial da contagem dos itens da lista. Neste exemplo, a contagem começará a partir do número 5. Portanto, o primeiro item da lista será marcado como "e" (5º item do alfabeto).-->
+            <li>Php</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <hr>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>MArio Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <hr>
+    <h2>Lista de definições</h2>
+    <dl><!--
+        A tag <dl> é usada para criar uma lista de definição. A sigla "dl" significa "description list" (lista de descrição). Essa tag é frequentemente usada para representar glossários, dicionários ou qualquer lista em que cada item é composto por um termo (dt - termo de descrição) seguido por sua definição (dd - descrição).-->
+
+        <dt>HTML</dt><!--<dt>: Termo de descrição (description term) - Define o termo ou a palavra a ser definida.-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd><!--<dd>: Descrição (description) - Fornece a definição ou descrição do termo definido.-->
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+
+         <dt>JavaScript</dt>
+         <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+
+    </dl>
+</body>
+</html>

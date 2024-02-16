@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*Shorthand:
+            padding:  top  right  bottom  left
+                      10px  10px   10px   10px
+
+            padding: 10px; -> o mesmo valor para  todos os lados(top,  right,  bottom,  left).
+
+            padding: top-bottom   right-left
+                       10px        20px
+
+            */
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /*Shorthand:
+            border: width  style   color
+                    10px   solid   darkslategray;*/
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /*Shorthand:
+            outiline: width  style   color
+                      5px    dashed  salmon;*/
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            /*Shorthand:
+            margin:  top  right  bottom  left
+                      20px  20px   40px   20px
+
+            margin: 20px; -> o mesmo valor para  todos os lados(top,  right,  bottom,  left).
+
+            margin: top-bottom   right-left
+                       10px        20px
+
+            */
+        }
+        a{
+            padding: 10px;
+            border: 10px solid red;
+            outline: 5px dashed salmon;
+            margin: 20px 20px 40px 20px;
+            /*Para centralizar uma caixa, use a seguinte declaração no seu seletor: "margin: auto;".*/
+        }
+
+    /*Todo conteúdo possui uma largura(width) e uma altura(height) e a esse conjunto de propriedades, damos o nome de box-size(tamanho da caixa). O tamanho da caixa não inclui as medidas de padding, border, outiline e margin.
+    Depois do conteúdo e de seu tamanho, vamos nos focar na borda que fica em volta dele. Ela pode ter uma espessura, uma cor e um formato.
+    Entre a borda e o conteúdo - da borda para dentro - temos o preenchimento (padding) e da borda para fora, temos a margem(margin).
+    Entre a margem e a borda, podemos determinar o contorno(outline) que é muito pouco utilizado, mas existe. Ele é um traçado visual que podemos criar fora da borda e o cálculo da sua espessura faz parte da margem estabelecida.
+    */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa block-level</h1>
+    <p>Parágrafo também são exemplos de block-level,mas os <a href="#">links ssão exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p><br>
+<p><a href="caixa02.html" target="_self" rel="next">Caixa02</a></p> <br>
+<a href="caixa03.html" target="_self"  rel="next">Caixa03</a>
+<!--
+    Caixa do tipo block-level:
+Um elemento dito block-level sempre vai se iniciar em uma nova linha e vai ocupar a largura total do elemento onde ele está contido. Se não estiver contido em nenhuma ooutra caixa, ele vai ocupar 100% da largura do <body>, etc.
+
+Na lista a seguir, coloquei alguns elementos HTML que são "block-level": <addres>,<div>,<footer>,<main>,<section>,<articule>,<dl>,<form>,<nav>,<table>,<aside>,<dt>,<h1...h6>,<noscript>,<tfoot>,<blockquote>,<fieldset>,<header>,<ol>,<ul>,<canvas>,<figcaption>,<hr>,<q>,<p>,<video>,<dd>,<figure>,<li>,<pre>.
+-->
+
+<!--
+    Caixa do tipo inline-level:
+Um elemento do tipo inline-level não vai começar em uma nova linha, é sim no ponto exato onde foram definidos. E a largura dele vai ocupar apenas o tamanho relativo ao seu conteúdo.
+
+Abaixo, listei alguns elementos inline-level usados pela HTML:
+<a>,<buttom>,<img>,<output>,<span>,<abbr>,<cite>,<input>,<q>,<strong>,<acronym>,<code>,<kbd>,<samp>,<sub>,<b>,<dfn>,<label>,<script>,<textarea>,<bdo>,<em>,<map>,<select>,<tt>,<br>,<i>,<object>,<small>,<var>.
+-->
+</body>
+</html>

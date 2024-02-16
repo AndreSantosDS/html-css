@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;/*height -> altura.*/
+            width: 200px;/*widht -> largura*/
+            margin: 5px;
+        }
+    
+        div:hover{
+            background-color: blue;
+            color: yellow;
+        }
+        div#d1:hover, div#d4:hover{
+            background-color: green;
+            color: yellow;
+        }
+        main > p{
+            display: none;
+        }
+        main:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            padding: 20px;
+            width: 400px;
+        }
+        main:hover{
+            color: red;
+        }
+        /*
+As pseudoclasses em CSS são utilizadas para selecionar e estilizar elementos com base em seu estado ou posição no documento HTML, além de permitirem a seleção de elementos com base em informações específicas, como a presença de determinados atributos ou o conteúdo dos elementos. As pseudoclasses são indicadas por dois pontos (:) e são adicionadas ao final do seletor.
+
+Aqui estão alguns exemplos de pseudoclasses comuns em CSS:
+
+:hover: Esta pseudoclasse é usada para selecionar e estilizar um elemento quando o cursor do mouse está sobre ele. Por exemplo:
+
+a:hover {
+    color: red;
+}
+:active: Seleciona e estiliza um elemento quando ele está sendo clicado. Por exemplo:
+
+button:active {
+    background-color: #00ff00;
+}
+:focus: Seleciona e estiliza um elemento quando ele está em foco, geralmente após ser clicado ou tabulado. Útil para melhorar a acessibilidade. Exemplo:
+
+input:focus {
+    border: 2px solid blue;
+}
+
+:first-child e :last-child: Selecionam o primeiro e o último filho de um elemento pai, respectivamente. Por exemplo:
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    color: #333;
+}
+
+Estes são apenas alguns exemplos de pseudoclasses em CSS. Elas fornecem uma maneira poderosa de selecionar e estilizar elementos com base em diferentes critérios, melhorando a flexibilidade e a expressividade das regras de estilo.
+*/
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <div id="d4">04</div>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mause sobre o texto abaixo.</p>
+    <main>Passe o mause aqui.
+        <p>TEXTO ESCONDIDO...</p>
+    </main>
+    <p>Fim do exemplo.</p>
+    <a href="pseudoelemento.html" target="_self" rel="next">Página de pseudo-elementos</a>
+</body>
+</html>

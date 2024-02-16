@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{/*Configuarações globais das CSS*/       
+            height: 100%;
+        }
+        body{
+          background-image: linear-gradient(to top/*to right, to left, to bottom, to top, 40deg,-50deg*/, #D94A64 20%,#D93690 10%,#6850BF,#F2A057,#F26849);
+          /*background-image: Esta propriedade CSS é usada para definir uma imagem de plano de fundo para o elemento selecionado. No entanto, neste caso, em vez de uma imagem estática, está sendo utilizado um gradiente linear como plano de fundo.
+
+linear-gradient(to top, white, blue): Esta é a função linear-gradient que cria um gradiente linear. O primeiro parâmetro to top especifica a direção do gradiente, que vai de baixo para cima.*/
+          background-attachment: fixed;
+/*A propriedade background-attachment em CSS é usada para especificar se uma imagem de fundo deve se mover com o restante do conteúdo da página ou se deve permanecer fixa enquanto o usuário rola a página. Quando você define background-attachment: fixed;, você está instruindo o navegador para fixar o plano de fundo em relação à janela de visualização.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradientes</h1>
+    <a href="cor01.html" rel="prev" style="color: white;">Cor01</a>
+    <a href="cor03.html" target="_self" rel="next" style="color: white;">Cor03</a>
+</body>
+</html>
