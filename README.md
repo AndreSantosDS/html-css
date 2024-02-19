@@ -13,8 +13,6 @@ Desafios
 
 <a href="https://andre-santos-de-souza.github.io/html-css/desafios/desafio4/index" target="_blank" rel="external">Desafio 4</a>
 
-<a href="https://andre-santos-de-souza.github.io/html-css/desafios/desafio5/index" target="_blank" rel="external">Desafio 5</a>
-
 <a href="https://andre-santos-de-souza.github.io/html-css/desafios/desafio6/index" target="_blank" rel="external">Desafio 6</a>
 
 <a href="https://andre-santos-de-souza.github.io/html-css/desafios/desafio7/index" target="_blank" rel="external">Desafio 7</a>
