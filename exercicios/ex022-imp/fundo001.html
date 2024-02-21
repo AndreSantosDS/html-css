@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body{
+            background-image: url('imagens/wallpaper001.jpg');
+            /*Isso significa que você está definindo uma imagem chamada "wallpaper001.jpg" como o plano de fundo para o elemento HTML ao qual esta regra CSS está aplicada.
+    A URL ('imagens/wallpaper001.jpg') especifica o caminho relativo para a imagem a partir do arquivo CSS ou do documento HTML que está referenciando o CSS.*/
+        }
+        div.quadrado{
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            background-color: lightgray;
+        }
+        div#q1{
+           background-color: skyblue;
+        }
+        div#q2{
+            background-image: linear-gradient(-50deg, yellow, orange,red);
+        }
+        div#q3{
+            background-image: url('imagens/pattern003.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>
