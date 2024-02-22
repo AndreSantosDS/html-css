@@ -1,4 +1,16 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: 'PassionOne-Regular';
+    src: url('../fonte/PassionOne-Regular.ttf') format('truetype');
+}
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-passionOne:'PassionOne-Regular',cursive;
+    --fonte-sriracha:'Sriracha', cursive;
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -6,6 +18,7 @@
 html,body{
     min-width: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
@@ -14,6 +27,10 @@ header{
 }
 header > h1{
     padding-top: 50px;
+    text-shadow: 1px 1px 5px red;
+    font-weight: bold;
+    font-size: 10vw;
+    font-family: var(--fonte-passionOne);
     font-variant: small-caps;
     /*Quando você aplica font-variant: small-caps; a um elemento de texto, as letras minúsculas são substituídas por versões menores das letras maiúsculas. Ou seja, as letras minúsculas são exibidas em um tamanho menor, mas mantendo a aparência das letras maiúsculas. Se a letra original for maiúscula, ela permanecerá inalterada.*/
 
@@ -31,10 +48,12 @@ header a:hover, footer a:hover{
     text-decoration: underline;
 }
 section{
+    font-family: var(--fonte-sriracha);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3.5vw;
 }
 section.normal{
     background-color: white;
@@ -45,7 +64,8 @@ section.imagem{
     color: white;
 }
 section.imagem > p{
-    width: 300px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.226);
 }
 footer{
