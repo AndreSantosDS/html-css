@@ -12,65 +12,87 @@
     --fonte-sriracha:'Sriracha', cursive;
 }
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
 }
-html,body{
-    min-width: 100vh;
+
+html, body {
+    min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte1);
 }
 header{
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: center
 }
-header > h1{
-    padding-top: 50px;
+header > h1 {
     text-shadow: 1px 1px 5px red;
-    font-weight: bold;
-    font-size: 10vw;
+    padding-top: 50px;
     font-family: var(--fonte-passionOne);
+    font-size: 10vw;
     font-variant: small-caps;
-    /*Quando você aplica font-variant: small-caps; a um elemento de texto, as letras minúsculas são substituídas por versões menores das letras maiúsculas. Ou seja, as letras minúsculas são exibidas em um tamanho menor, mas mantendo a aparência das letras maiúsculas. Se a letra original for maiúscula, ela permanecerá inalterada.*/
+     /*Quando você aplica font-variant: small-caps; a um elemento de texto, as letras minúsculas são substituídas por versões menores das letras maiúsculas. Ou seja, as letras minúsculas são exibidas em um tamanho menor, mas mantendo a aparência das letras maiúsculas. Se a letra original for maiúscula, ela permanecerá inalterada.*/
 
     /*text-transform: uppercase; -> especifica que o texto dentro do elemento deve ser convertido para letras maiúsculas.*/
 }
-header > p{
+header > p {
     padding-bottom: 50px;
 }
-header a, footer a{
+header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
-header a:hover, footer a:hover{
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
-section{
-    font-family: var(--fonte-sriracha);
+section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte-sriracha);
     font-size: 3.5vw;
 }
-section.normal{
+section > p {
+    padding-bottom: 2em;
+}
+section.normal {
     background-color: white;
     color: black;
 }
 section.imagem{
-    background-color: rgb(34, 30, 30);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 section.imagem > p{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.226);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
 }
-footer{
+section#img01 {
+    background-color: rgb(15, 15, 15);
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+section#img02 {
+    background-color: rgb(15, 15, 15);
+    background-image: url("../imagens/background002.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+footer {
     background-color: black;
-    text-align: center;
     color: white;
+    text-align: center;
     padding: 10px;
 }
