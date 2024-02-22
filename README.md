@@ -27,6 +27,8 @@ Desafios
 
 <a href="https://andre-santos-de-souza.github.io/html-css/desafios/desafio11/index" target="_blank" rel="external">Desafio 11</a>
 
+<a href="https://andre-santos-de-souza.github.io/html-css/desafios/desafio12/index" target="_blank" rel="external">Desafio 12</a>
+
 Exercícios
 
 <a href="https://andre-santos-de-souza.github.io/html-css/exercicios/ex001/index" target="_blank" rel="external">Exercício 1</a>
