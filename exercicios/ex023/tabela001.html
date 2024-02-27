@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            /*A propriedade border-collapse em CSS3 é utilizada para especificar o modelo de borda a ser aplicado em uma tabela HTML. A propriedade aceita dois valores principais: collapse e separate.
+
+collapse: Este valor indica que as bordas das células da tabela devem ser mescladas e tratadas como uma única borda. Isso significa que as bordas adjacentes não terão espaçamento entre elas, proporcionando uma aparência mais compacta e unificada.
+
+separate: Este valor (o valor padrão se não for especificado) indica que as bordas das células da tabela devem ser exibidas separadamente, cada uma com seu próprio espaçamento. Isso cria um espaçamento entre as células, resultando em uma aparência mais espaçada e distintiva.*/
+        }
+        tr.linha{
+            background-color: aquamarine;
+        }
+        td{
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            padding: 8px;
+            text-align: center;/*Alinhamento horizontal -> text-align: right, left e center;*/
+            vertical-align: middle;/*Alinhamento vertical -> vertical-align: middle(meio), top, bottom;*/
+        }
+        td.dado{
+            background-color: yellow;
+        }
+        .numero{
+            text-align: right;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        Hierarquia de tabelas(simples)
+        table = tabela
+          table rows = linha de tabela
+            table header = cabeçalho de tabela
+            table data = dado de tabela
+    -->
+    <table><!--tabela-->
+        <tr><!--primeira linha-->
+          <td>A1</td><!--dado de tabela-->
+          <td>B1</td>
+          <td>C1</td>
+        </tr>
+        <tr class="linha"><!--segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr><!--terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr><!--quarta linha-->
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+        <tr><!--quinta linha-->
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr><!--sexta linha-->
+            <td>A6</td>
+        </tr>
+    </table>
+</body>
+</html>
