@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+         font-size: 1.5em;
+         padding: 10px;
+         font-weight: bold;
+         background-color: lightgrey;
+        }
+        .direita{
+            text-align:right;
+            vertical-align: middle;
+        }
+        .centralizado{
+            text-align: center;
+            vertical-align: middle;
+        }
+        thead,tfoot{
+            background-color: #383838;
+            color: white;
+        }
+        tbody tr:nth-child(even){
+           background-color: rgb(189, 7, 7);
+           font-weight: bold;
+           color: white;
+        }
+        tbody tr:nth-child(2n-1){
+           background-color: rgb(3, 1, 1);
+           font-weight: bold;
+           color: white;
+        }
+        /*Quanto à expressão tr:nth-child(even), ela é usada em CSS para selecionar todas as linhas pares de uma tabela HTML.
+        
+A expressão tr:nth-child(odd) em CSS é usada para selecionar todas as linhas ímpares de uma tabela HTML.
+
+A expressão tr:nth-child(2n) em CSS é utilizada para selecionar todas as linhas pares de uma tabela HTML.
+
+A expressão tr:nth-child(2n-1) em CSS é usada para selecionar todas as linhas ímpares de uma tabela HTML. */
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table 
+         Caption(legenda da tabela)
+          Thead(cabeça da tabela)
+             tr(linha), td(dado), th(título)
+          Tbody(corpo da tabela)
+             tr(linha), td(dado), th(título)
+          Tfoot(rodapé da tabela)
+             tr(linha), td(dado), th(título)
+    -->
+    <Table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th><!--O atributo scope="col" é utilizado para indicar que o cabeçalho se aplica às células na mesma coluna.-->
+                <th scope="col" style="width: 100px;">População</th>
+                <th scope="col" style="width: 50px;">% da pop. Total</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td>São Paulo</td>
+                <td class="direita">44 411 238</td>
+                <td class="centralizado">21,88%</td>
+             </tr>
+             <tr>
+                <td>Minas Gerais</td>
+                <td class="direita">20 538 718</td>
+                <td class="centralizado">10,11%</td>
+             </tr>
+             <tr>
+                <td>Rio de Janeiro</td>
+                <td class="direita">16 054 524</td>
+                <td class="centralizado">7,91%</td>
+             </tr>
+             <tr>
+                <td>Bahia</td>
+                <td class="direita">14 141 626</td>
+                <td class="centralizado">6,96%</td>
+             </tr>
+             <tr>
+                <td>Paraná</td>
+                <td class="direita">11 444 380</td>
+                <td class="centralizado">5,64%</td>
+             </tr>
+             <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="direita">10 882 965	</td>
+                <td class="centralizado">5,36%</td>
+             </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="direita">9 058 931</td>
+                <td class="centralizado">4,46%</td>
+             </tr>
+             <tr>
+                <td>Ceará</td>
+                <td class="direita">8 794 957</td>
+                <td class="centralizado">4,33%</td>
+             </tr>
+             <tr>
+                <td>Pará</td>
+                <td class="direita">8 121 025</td>
+                <td class="centralizado">4,1%</td>
+             </tr>
+             <tr>
+                <td>Santa Catarina</td>
+                <td class="direita">7 610 361</td>
+                <td class="centralizado">3,75%</td>
+             </tr>
+             <tr>
+                <td>Goiás</td>
+                <td class="direita">7 056 495</td>
+                <td class="centralizado">3,47%</td>
+             </tr>
+             <tr>
+                <td>Maranhão</td>
+                <td class="direita">6 775 805</td>
+                <td class="centralizado">3,34%</td>
+             </tr>
+             <tr>
+                <td>Paraíba</td>
+                <td class="direita">3 974 687</td>
+                <td class="centralizado">1,96%</td>
+             </tr>
+             <tr>
+                <td>Amazonas</td>
+                <td class="direita">3 941 613</td>
+                <td class="centralizado">1,94%</td>
+             </tr>
+             <tr>
+                <td>Espírito Santo</td>
+                <td class="direita">3 833 712	</td>
+                <td class="centralizado">1,89%</td>
+             </tr>
+             <tr>
+                <td>Mato Grosso</td>
+                <td class="direita">3 658 649</td>
+                <td class="centralizado">1,8%</td>
+             </tr>
+             <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="direita">3 302 729</td>
+                <td class="centralizado">1,63%</td>
+             </tr>
+             <tr>
+                <td>Piauí</td>
+                <td class="direita">3 271 199</td>
+                <td class="centralizado">1,61%</td>
+             </tr>
+             <tr>
+                <td>Alagoas</td>
+                <td class="direita">3 127 683</td>
+                <td class="centralizado">1,54%</td>
+             </tr>
+             <tr>
+                <td> Distrito Federal</td>
+                <td class="direita">2 817 381	</td>
+                <td class="centralizado">1,39%</td>
+             </tr>
+             <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="direita">2 757 013</td>
+                <td class="centralizado">1,36%</td>
+             </tr>
+             <tr>
+                <td>Sergipe</td>
+                <td class="direita">2 209 558</td>
+                <td class="centralizado">1,09%</td>
+             </tr>
+             <tr>
+                <td>Rondônia</td>
+                <td class="direita">1 581 196</td>
+                <td class="centralizado">0,78%</td>
+             </tr>
+             <tr>
+                <td>Tocantins</td>
+                <td class="direita">1 511 460</td>
+                <td class="centralizado">0,74%</td>
+             </tr>
+             <tr>
+                <td>Acre</td>
+                <td class="direita">830 018</td>
+                <td class="centralizado">0,41%</td>
+             </tr>
+             <tr>
+                <td>Amapá</td>
+                <td class="direita">733 759	</td>
+                <td class="centralizado">0,36%</td>
+             </tr>
+             <tr>
+                <td>Roraima</td>
+                <td class="direita">636 707</td>
+                <td class="centralizado">0,31%</td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th><!--O atributo scope="row" é utilizado para indicar que o cabeçalho se aplica às células na mesma linha.-->
+            <td class="direita"><stron>203.078.389</stron></td>
+        </tfoot>
+    </Table>
+</body>
+</html>
