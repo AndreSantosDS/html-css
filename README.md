@@ -31,7 +31,7 @@ Desafios
 
 <a href="https://andre-santos-de-souza.github.io/html-css/desafios/desafio13/tabela001.html" target="_blank" rel="external">Desafio 13</a>
 
-<a href="https://andre-santos-de-souza.github.io/html-css/desafios/desafio14/index" target="_blank" rel="external">Desafio 12</a>
+<a href="https://andre-santos-de-souza.github.io/html-css/desafios/desafio14/index" target="_blank" rel="external">Desafio 14</a>
 
 Exercícios
 
