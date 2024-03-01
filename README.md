@@ -78,3 +78,5 @@ Exercícios
 <a href="https://andre-santos-de-souza.github.io/html-css/exercicios/ex021-imp/caixa01" target="_blank" rel="external">Exercício 21</a>
 
 <a href="https://andre-santos-de-souza.github.io/html-css/exercicios/ex022-imp/fundo001" target="_blank" rel="external">Exercício 22</a>
+
+<a href="https://andre-santos-de-souza.github.io/html-css/exercicios/ex023/tabela001" target="_blank" rel="external">Exercício 23</a>
