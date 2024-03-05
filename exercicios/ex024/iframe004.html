@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam totam sequi ad fugit excepturi quod culpa adipisci tempore hic cupiditate tempora beatae dolor laboriosam, doloribus atque sed. Rerum, molestias.</p>
+
+    <iframe src="paginas-extras/pag004.html" frameborder="0" height="300px" width="300px" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        <!--sandbox="": Este atributo permite restringir o comportamento da página dentro do iframe, proporcionando uma camada de segurança. Se o valor estiver vazio, o iframe não terá restrições especiais. No entanto, se você quiser impor restrições, pode incluir valores específicos no atributo, como "allow-same-origin", "allow-scripts","allow-forms" e entre outros parâmetros. Esses valores controlam o que a página incorporada pode ou não fazer.
+
+referrerpolicy="": Este atributo controla como o cabeçalho Referer é incluído quando a página dentro do iframe faz uma solicitação a outra página. O cabeçalho Referer normalmente contém a URL da página de onde a solicitação é feita. Os valores possíveis para esse atributo incluem "no-referrer", "no-referrer-when-downgrade", "origin", "origin-when-cross-origin", "same-origin", "strict-origin", "strict-origin-when-cross-origin", e "unsafe-url".-->
+        <p>Seu navegador não é compatível com isso...</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iusto ipsam voluptas! Amet qui enim obcaecati ad perspiciatis modi incidunt sequi, quo quaerat consequatur cum, illum adipisci atque, dolorem aperiam?</p>
+    <a href="iframe001.html" rel="prev">Página 1</a>
+</body>
+</html>
