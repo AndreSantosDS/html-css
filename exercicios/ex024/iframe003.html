@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum libero velit nam necessitatibus ea? Molestias nesciunt architecto magnam similique delectus fugit laudantium optio corrupti sit. Laborum ipsa cumque tenetur hic?</p>
+
+     <ul>
+        <li>
+            <a href="paginas-extras/pag001.html" target="frame">Primeira página</a>
+        </li>
+        <li>
+            <a href="paginas-extras/pag002.html" target="frame">Segunda página</a>
+        </li>
+        <li>
+            <a href="paginas-extras/pag003.html" target="frame">Terceira página</a>
+        </li>
+     </ul>
+
+     <iframe id="tela" name="frame" src="" frameborder="1" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolores veritatis assumenda itaque ex laboriosam nihil maiores et! Autem, commodi nostrum modi ut eveniet assumenda sunt at rerum voluptatem! In?</p><img src='imagens/cursoemvideo.png' alt=''>">
+        <!--srcdoc="": Este atributo permite que você forneça diretamente o conteúdo HTML que será exibido dentro do <iframe>, sem a necessidade de uma URL externa.-->
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat explicabo dolorum id maiores itaque quae voluptatem voluptates fugit, asperiores molestias nemo ipsum eos eveniet quod repellat voluptas sapiente neque. Corrupti?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, architecto nisi. Laboriosam pariatur, nulla esse veritatis ratione non ipsum maiores officia iste dolor beatae architecto. Dolore dolorem nisi totam laboriosam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, aliquid fuga at consequatur veritatis ratione? Nemo, obcaecati praesentium! Autem labore ex nostrum eius odio non adipisci deserunt, ut nisi quisquam.</p>
+</body>
+</html>
