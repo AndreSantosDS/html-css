@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+            <!--type="number": Este atributo especifica que o tipo de entrada é numérico. Ele permite que os navegadores saibam que o valor aceito é um número.
+            min="0": Este atributo especifica o valor mínimo aceitável para a entrada numérica. No exemplo, o valor mínimo é 0.
+            max="10": Este atributo especifica o valor máximo aceitável para a entrada numérica. No exemplo, o valor máximo é 10.
+            step="0.1": Este atributo especifica o incremento (ou decremento) usado para os controles de número. No exemplo, o valor é definido como 0.1, o que significa que os números podem ser aumentados ou diminuídos em incrementos de 0.1.-->
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2024-03">
+            <!--type="month": Este atributo especifica que o tipo de entrada é um controle de mês. Ele permite que os navegadores mostrem um seletor de mês para que o usuário possa selecionar um mês e um ano.
+              value="2024-03": Este atributo especifica o valor inicial do campo de entrada. No exemplo, o valor é definido como "2024-03", que representa o mês de março de 2024. -->
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia">
+            <!--type="date": Este atributo especifica que o tipo de entrada é um controle de data. Ele permite que os navegadores mostrem um seletor de data para que o usuário possa selecionar uma data.-->
+        </p>
+        <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
+            <!--type="time": Este atributo especifica que o tipo de entrada é um controle de tempo. Ele permite que os navegadores mostrem um seletor de hora para que o usuário possa selecionar uma hora.-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
