@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <!-- A tag <form> em HTML5 é usada para criar um formulário em uma página da web. 
+            
+            O atributo "action" dentro da tag <form> especifica para onde os dados do formulário serão enviados quando o formulário for submetido. No exemplo fornecido, action="cadastro.php" indica que os dados do formulário serão enviados para um arquivo PHP chamado "cadastro.php" para processamento adicional no servidor.
+            
+            method="post": Este atributo especifica o método HTTP a ser usado ao enviar os dados do formulário. Existem dois métodos principais: "GET" e "POST". Quando o método é definido como "POST", os dados do formulário são enviados de forma mais segura, pois são incluídos no corpo da solicitação HTTP, em vez de serem anexados à URL. Isso é útil para envio de dados sensíveis, como senhas. O método "POST" é comumente usado para envio de formulários.
+
+            method="get": Este atributo especifica o método HTTP a ser utilizado ao enviar os dados do formulário. Quando o método é definido como "GET", os dados do formulário são anexados à URL como parâmetros de consulta. Isso pode ser útil para formulários simples que não enviam dados sensíveis e que podem ser facilmente processados por meio de uma URL. No entanto, dados sensíveis, como senhas, não devem ser enviados por meio do método "GET", pois eles ficam visíveis na barra de endereços do navegador.
+
+            O atributo "autocomplete" controla se o preenchimento automático de formulários está ativado ou desativado para os campos dentro do formulário. Quando você define autocomplete="off", isso indica que você deseja desativar o preenchimento automático para todos os campos dentro deste formulário.-->
+
+       <p><label for="inome">Nome:</label> 
+        <input type="text" name="nome" id="inome"></p>
+       <!--A tag <label> em HTML5 é usada para associar um rótulo (label) a um elemento de formulário, como <input>, <select>, ou <textarea>. Isso é útil para melhorar a usabilidade e acessibilidade do formulário, pois permite que os usuários cliquem no rótulo para focar no campo correspondente.
+
+O atributo "for" dentro da tag <label> especifica o ID do elemento de formulário ao qual o rótulo está associado. O valor desse atributo deve corresponder ao ID do elemento de formulário.
+
+Por exemplo, no caso de <label for="inome">Nome:</label>, o rótulo "Nome:" está associado a um elemento de formulário com o ID "inome". Quando um usuário clica no rótulo "Nome:", o navegador focaliza automaticamente no elemento de formulário que possui o ID "inome"
+        
+        A tag HTML5 <input> é usada para criar um campo de entrada interativo em um formulário web. 
+
+          type="text": Este atributo define o tipo de entrada do campo. No caso de type="text", o campo de entrada aceitará texto simples.
+
+          name="Nome": Este atributo especifica o nome do campo. Quando o formulário é enviado para o servidor, este nome é usado para identificar o campo e os dados inseridos nele.
+
+          id="Nome": Este atributo define um identificador único para o campo de entrada. É usado principalmente para fins de referência em CSS ou JavaScript. Cada ID em uma página deve ser único.-->
+       
+       <p><label for="isobrenome">Sobrenome:</label> 
+        <input type="text" name="sobrenome" id="isobrenome"></p>
+       
+       <p><input type="submit" value="Enviar"></p>
+       <!--A tag HTML5 <input> é usada para criar um campo de entrada interativo em um formulário web.
+        
+        type="submit": Este atributo especifica o tipo de entrada do campo. Quando definido como "submit", o botão irá enviar o formulário quando clicado.
+
+        value="Enviar": Este atributo define o rótulo exibido no botão. No exemplo fornecido, o rótulo exibido será "Enviar", indicando aos usuários que ao clicar neste botão, o formulário será enviado.-->
+    </form>
+</body>
+</html>

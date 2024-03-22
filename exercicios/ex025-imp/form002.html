@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="8" placeholder="senha" autocomplete="current-password">
+<!--type="password": Indica que o campo de entrada será usado para inserir senhas.
+             
+required: Este atributo especifica que o campo é obrigatório preencher antes de enviar o formulário. Isso significa que o usuário não pode enviar o formulário sem preencher este campo.
+             
+minlength="8": Define o comprimento mínimo que a senha pode ter. Neste caso, a senha deve ter pelo menos 8 caracteres.
+
+maxlength="20": Define o comprimento máximo permitido para a senha. Aqui, a senha não pode ter mais de 20 caracteres.
+
+size="8": Este atributo define o tamanho visual do campo de entrada. No entanto, é importante notar que o tamanho visual pode não corresponder ao número real de caracteres que o campo pode conter, isso é controlado pelos atributos minlength e maxlength.
+
+placeholder="senha": Este atributo especifica um texto de exemplo que aparece no campo de entrada antes do usuário digitar alguma coisa. Neste caso, "senha" é exibido como uma dica para o usuário sobre o tipo de informação esperada.
+
+autocomplete="current-password": Este atributo é usado para fornecer sugestões de preenchimento automático ao navegador. current-password é um valor reservado para campos de senha, indicando que o navegador deve tentar preencher automaticamente este campo com senhas salvas pelo usuário. Isso ajuda a melhorar a usabilidade para o usuário final.-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <!--type="reset": Este tipo de input é usado para criar um botão que, quando clicado, redefine os valores de todos os campos de formulário dentro do formulário ao seu estado original. Isso significa que ele limpará ou redefinirá todos os campos do formulário para os valores que estavam quando o formulário foi carregado pela primeira vez.
+
+value="Limpar": Este atributo define o texto exibido no botão. No caso específico, o texto exibido no botão será "Limpar", indicando ao usuário que clicar nesse botão irá limpar os campos do formulário.-->
+        </p>
+    </form>
+</body>
+</html>
