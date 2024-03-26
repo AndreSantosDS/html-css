@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <!--O <fieldset> é usado para agrupar elementos de formulário relacionados. Por exemplo, se você tiver um conjunto de campos que coletam informações pessoais do usuário, como nome, endereço, e-mail etc., você pode envolver esses campos em um <fieldset> para indicar visualmente que eles estão relacionados.-->
+            <legend>Dados pessoais</legend>
+            <!--É comum incluir uma tag <legend> dentro do <fieldset>. Esta tag fornece um rótulo descritivo ou uma legenda para o grupo de campos dentro do <fieldset>. Por exemplo, se os campos dentro do <fieldset> estiverem coletando informações de contato, a tag <legend> pode conter o texto "Informações de Contato".-->
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" minlength="5" maxlength="30">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+                <!--type="email": Este atributo especifica o tipo de entrada como um campo de e-mail. Ele instrui o navegador a validar automaticamente o valor inserido pelo usuário para garantir que seja um endereço de e-mail válido. Isso é feito usando uma validação padrão embutida no navegador.-->
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+                <!--type="tel": Este atributo especifica o tipo de entrada como um campo de telefone. O tipo "tel" é destinado a números de telefone, o que pode permitir ao navegador otimizar o teclado virtual exibido em dispositivos móveis.
+                autocomplete="tel": Define que o navegador deve preencher automaticamente o campo com informações salvas anteriormente relacionadas a números de telefone.
+            pattern="^(\d{2})\d{4,5}-\d{4}$": Este atributo especifica um padrão regex (expressão regular) que o valor do campo deve corresponder para ser considerado válido. No caso apresentado, o padrão requer que o número de telefone tenha o formato "(xx)xxxx-xxxx", onde "x" representa um dígito numérico. A expressão regular garante que o usuário insira um número de telefone no formato desejado.-->
+            <!--Estudar mais sobre RegEx-->
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
