@@ -29,10 +29,10 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#login > div#imagem{
     display: block;
@@ -59,11 +59,32 @@ div#formulario > form > div.campo{
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid var(--cor2);
 }
 div#formulario > form > div.campo>label{
     display: none;
+}
+div#formulario > form > div.campo> i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div#formulario > form > div.campo > input{
+    padding-left: 3px;
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-13px);
+}
+div#formulario > form > div.campo> input:focus-within{
+    background-color: white;
 }
 div#formulario > form > input[type=submit]{
     display: block;
