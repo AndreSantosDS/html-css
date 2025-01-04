@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibel box</title>
+    <style>
+        div.container{
+            height: 80vh;
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+            /* align-items: flex-start; */
+            align-content: space-around;
+            /*A propriedade align-content no CSS controla como as linhas de um container flexível (usando display: flex) ou grid (usando display: grid) são distribuídas no eixo transversal, quando há espaço extra disponível.
+            Ela é útil quando o conteúdo tem múltiplas linhas e funciona somente em containers com espaço extra no eixo cruzado (como em um flex-wrap: wrap ou grid).
+            Valores comuns:
+            flex-start: Alinha as linhas ao início do container.
+            flex-end: Alinha as linhas ao final do container.
+            center: Centraliza as linhas no container.
+            space-between: Distribui as linhas com o máximo de espaço entre elas.
+            space-around: Distribui as linhas com espaço igual ao redor de cada uma.
+            space-evenly: Distribui as linhas com espaço igual entre, antes e depois de cada linha.
+            stretch (padrão): Estica as linhas para preencher o container.*/
+        }
+
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+</body>
+</html>
