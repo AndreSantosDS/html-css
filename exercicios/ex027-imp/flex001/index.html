@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibel box</title>
+    <style>
+        img{
+            width: 100%;
+        }
+
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+        }
+
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+            /*A propriedade flex em CSS é um atalho poderoso que combina as propriedades flex-grow, flex-shrink e flex-basis. Resumidamente, ela define como um item flexível dentro de um contêiner display: flex; deve crescer, encolher e qual o tamanho base inicial que ele deve ocupar.
+            O valor auto pode ser usado como parte do flex-basis, que é a terceira parte da propriedade flex. Quando flex-basis é definido como auto, o tamanho base do item é determinado pelo seu conteúdo ou por outras propriedades de tamanho (como width ou height, caso estejam definidas).
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <img src="img/main-axis_cross-axis.jpg" alt="">
+</body>
+</html>

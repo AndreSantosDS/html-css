@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibel box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column;
+            /*
+            A propriedade flex-direction no CSS define a direção principal em que os itens em um container flexível são organizados. Ela controla o eixo principal (horizontal ou vertical) e a ordem dos itens.
+            Valores possíveis:
+            row: Alinha os itens em uma linha, da esquerda para a direita (padrão).
+            row-reverse: Alinha os itens em uma linha, mas da direita para a esquerda.
+            column: Alinha os itens em uma coluna, de cima para baixo.
+            column-reverse: Alinha os itens em uma coluna, mas de baixo para cima.
+            */
+        }
+
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
