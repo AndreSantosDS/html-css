@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibel box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 700px;
+        }
+
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        div#cxA{
+            /* flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis:  200px; */
+
+            flex:  1 1 auto;
+            /* flex: auto; -> é a mesma coisa que flex: 1 1 auto. O flex: auto é a mesma coisa que ter uma caixa mega flexivel, o máximo de flexibilidade que ela pode ter.*/
+        }
+        div#cxB{
+            /* flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis:  200px; */
+
+            flex:  0 0 auto;
+            /* flex: none; -> é a mesma coisa que flex: 0 0 auto, que dizer que o item não vai ser flexivel*/
+        }
+        div#cxC{
+            /* flex-shrink: 8 ;
+            flex-grow: 1;
+            flex-basis:  200px; */
+
+            flex:  1 0 auto;
+            /* flex: initial; -> é a mesma coisa que flex: 1 0 auto;*/
+            /*A propriedade flex em CSS é um atalho poderoso que combina as propriedades flex-grow, flex-shrink e flex-basis. Resumidamente, ela define como um item flexível dentro de um contêiner display: flex; deve crescer, encolher e qual o tamanho base inicial que ele deve ocupar.
+            O valor auto pode ser usado como parte do flex-basis, que é a terceira parte da propriedade flex. Quando flex-basis é definido como auto, o tamanho base do item é determinado pelo seu conteúdo ou por outras propriedades de tamanho (como width ou height, caso estejam definidas).
+            */
+        }
+
+        div#cxD{
+            /* flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis:  200px; */
+
+            flex: 3 1 auto;
+            /* flex: 3; -> esse único valor é de flex-grow, que é a mesma coisa que flex: 3 1 auto;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+        <div class="item" id="cxD">D</div>
+    </div>
+</body>
+</html>
