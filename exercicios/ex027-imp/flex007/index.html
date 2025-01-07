@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibel box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+        #i1{
+            order: 0;
+            /*O order em CSS é uma propriedade usada com Flexbox ou Grid Layout para definir a ordem visual dos itens dentro de um contêiner. Por padrão, os itens aparecem na ordem em que estão no código HTML, mas com o order, você pode alterar essa sequência.
+            Valor padrão: order: 0; (a ordem padrão é a mesma do HTML).
+            Como funciona: Quanto menor o valor de order, mais cedo o item aparecerá no contêiner. Valores negativos também são permitidos.
+            A propriedade order continua funcionando com flex-direction, mas o efeito visual pode variar dependendo da direção definida no contêiner flexível. Isso ocorre porque flex-direction altera o eixo principal em que os itens são dispostos.*/
+        }
+        #i2{
+            order: -2;
+        }
+        #i3{
+            order: 4;
+        }
+        #i4{
+            order: 8;
+        }
+        #i5{
+            order: 2;
+        }
+        #i6{
+            order: 0;
+        }
+        #i7{
+            order: -4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>

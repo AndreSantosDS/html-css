@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibel box</title>
+    <style>
+        div.container{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis:  250px;
+            flex-shrink: 0;
+            /*O atributo flex-shrink em CSS define o fator de redução de um item flexível dentro de um contêiner flex. Ele determina a proporção pela qual um item pode encolher caso o espaço disponível seja menor que a soma dos tamanhos dos itens.
+            flex-shrink: valor;
+            valor: É um número (padrão é 1), que indica a proporção de redução. Valores maiores fazem o item encolher mais.
+            Se flex-shrink: 0;, o item não encolherá mesmo se faltar espaço.
+            Se flex-shrink: 1; (ou qualquer outro número positivo), o item encolherá proporcionalmente, considerando o fator definido.
+            */
+            flex-grow: 1;
+            /*
+            A propriedade flex-grow em CSS define como um item flexível dentro de um container flex deve crescer para ocupar o espaço disponível.
+            Valor padrão: 0 (o item não cresce).
+            Valores maiores que 0: O item cresce proporcionalmente ao espaço disponível, de acordo com o valor definido. Por exemplo, se dois itens têm flex-grow: 1 e flex-grow: 2, o segundo item ocupará o dobro do espaço livre em relação ao primeiro.*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>
